@@ -1,0 +1,151 @@
+/* Schedule Page Specific Styles */
+.schedule-header {
+    background-color: #f4f7fa;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.schedule-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Improved Search and Filter Layout */
+.search-filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;  /* Makes sure it stacks nicely on smaller screens */
+}
+
+.search-container, .filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input, .filter-container select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    transition: border-color 0.3s;
+}
+
+.search-container input:focus, .filter-container select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #4a68df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust button appearance for filter */
+.filter-btn {
+    background-color: #4a68df;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.schedule-image {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-table {
+    flex: 1;
+    margin-left: 20px;
+    width: calc(100% - 500px);
+}
+
+.schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.schedule-table th {
+    background-color: #2d3e50;
+    color: white;
+}
+
+.schedule-table td.on-time {
+    background-color: #28a745;
+    color: white;
+}
+
+.schedule-table td.delayed {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Upcoming Special Trains */
+.upcoming-trains {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.upcoming-trains h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.upcoming-trains ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Feedback Section */
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.feedback-section textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}

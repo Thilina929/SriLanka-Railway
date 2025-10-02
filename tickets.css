@@ -1,0 +1,90 @@
+/* Ticket Form */
+.ticket-form {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.ticket-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-form label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.ticket-form input, 
+.ticket-form select {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.ticket-form button {
+    background-color: #1fb801;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ticket-form button:hover {
+    background-color: #2b9c14;
+}
+
+/* Two Columns Layout */
+.info-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.left-column,
+.right-column {
+    width: 48%;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing Breakdown, Cancellation, Contact, and Travel Tips */
+.pricing-breakdown h3,
+.cancellation-policy h3,
+.contact-info h3,
+.travel-tips h3 {
+    color: #2d3e50;
+    margin-bottom: 10px;
+}
+
+.pricing-breakdown p,
+.cancellation-policy p,
+.contact-info p,
+.travel-tips p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #4a68df;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+

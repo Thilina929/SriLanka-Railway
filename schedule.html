@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - Sri Lanka Railway</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="schedule.css"> <!-- Link to the schedule page specific CSS -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sri Lanka Railway</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="schedule-header">
+            <h2>Train Schedule</h2>
+
+            <!-- Search and Filter Container -->
+            <div class="search-filter-container">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search by route or train number..." id="search" />
+                    <button class="search-btn">Search</button>
+                </div>
+
+                <!-- Filter Options -->
+                <div class="filter-container">
+                    <label for="status">Status:</label>
+                    <select id="status">
+                        <option value="all">All</option>
+                        <option value="on-time">On Time</option>
+                        <option value="delayed">Delayed</option>
+                    </select>
+                    <button class="filter-btn">Filter</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Container -->
+        <div class="schedule-container">
+            <img src="images/train_map.jpg" alt="Train schedule board" class="schedule-image" />
+            <div class="schedule-table">
+                <table>
+                    <tr>
+                        <th>Train No</th>
+                        <th>Route</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                        <th>Duration</th>
+                        <th>Price (LKR)</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>101</td>
+                        <td>Colombo to Kandy</td>
+                        <td>07:00 AM</td>
+                        <td>09:00 AM</td>
+                        <td>2 hrs</td>
+                        <td>500</td>
+                        <td class="on-time">On Time</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Kandy to Colombo</td>
+                        <td>10:00 AM</td>
+                        <td>12:00 PM</td>
+                        <td>2 hrs</td>
+                        <td>500</td>
+                        <td class="on-time">On Time</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Colombo to Galle</td>
+                        <td>08:00 AM</td>
+                        <td>10:30 AM</td>
+                        <td>2.5 hrs</td>
+                        <td>700</td>
+                        <td class="on-time">On Time</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Kandy to Nuwara Eliya</td>
+                        <td>09:30 AM</td>
+                        <td>11:30 AM</td>
+                        <td>2 hrs</td>
+                        <td>600</td>
+                        <td class="delayed">Delayed</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>Anuradhapura to Colombo</td>
+                        <td>06:00 AM</td>
+                        <td>08:30 AM</td>
+                        <td>2.5 hrs</td>
+                        <td>500</td>
+                        <td class="on-time">On Time</td>
+                    </tr>
+                </table>                    
+            </div>
+        </div>
+
+        <!-- Upcoming Special Trains -->
+        <section class="upcoming-trains">
+            <h3>Upcoming Special Trains</h3>
+            <ul>
+                <li>Special Train to Jaffna - Departure: 05:00 AM, Arrival: 11:00 AM</li>
+                <li>Holiday Train to Galle - Departure: 07:30 AM, Arrival: 10:00 AM</li>
+            </ul>
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="feedback-section">
+            <form>
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sri Lanka Railway. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

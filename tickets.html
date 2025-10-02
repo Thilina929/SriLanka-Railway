@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets - Sri Lanka Railway</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="tickets.css">
+</head>
+<body>
+    <header>
+        <h1>Sri Lanka Railway</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="ticket-form">
+            <h2>Purchase Tickets</h2>
+            <p>Book your tickets online for a hassle-free travel experience.</p>
+            <form>
+                <label for="route">Select Route:</label>
+                <select id="route" name="route">
+                    <option value="colombo-kandy">Colombo to Kandy</option>
+                    <option value="kandy-colombo">Kandy to Colombo</option>
+                    <option value="colombo-galle">Colombo to Galle</option>
+                    <option value="galle-colombo">Galle to Colombo</option>
+                    <option value="colombo-nuwara-eliya">Colombo to Nuwara Eliya</option>
+                    <option value="nuwara-eliya-colombo">Nuwara Eliya to Colombo</option>
+                    <option value="kandy-nuwara-eliya">Kandy to Nuwara Eliya</option>
+                    <option value="nuwara-eliya-kandy">Nuwara Eliya to Kandy</option>
+                    <option value="colombo-anuradhapura">Colombo to Anuradhapura</option>
+                    <option value="anuradhapura-colombo">Anuradhapura to Colombo</option>
+                    <option value="kandy-polonnaruwa">Kandy to Polonnaruwa</option>
+                    <option value="polonnaruwa-kandy">Polonnaruwa to Kandy</option>
+                </select>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="adults">Number of Adults (Price: LKR 500 each):</label>
+                <input type="number" id="adults" name="adults" min="0" value="0">
+
+                <label for="children">Number of Children (Price: LKR 250 each):</label>
+                <input type="number" id="children" name="children" min="0" value="0">
+
+                <button type="submit">Check Availability</button>
+            </form>
+        </section>
+
+        <!-- Two Columns Layout for Sections -->
+        <section class="info-columns">
+            <!-- Left Column -->
+            <div class="left-column">
+                <section class="pricing-breakdown">
+                    <h3>Ticket Pricing</h3>
+                    <p>Adult: LKR 500</p>
+                    <p>Children (under 12): LKR 250</p>
+                    <p>Group discounts available for 10 or more tickets.</p>
+                </section>
+
+                <section class="cancellation-policy">
+                    <h3>Cancellation Policy</h3>
+                    <p>You can cancel your ticket up to 24 hours before departure for a full refund.</p>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <section class="travel-tips">
+                    <h3>Travel Tips</h3>
+                    <p>Arrive at the station at least 30 minutes before departure.</p>
+                    <p>Keep your ID handy for verification.</p>
+                    <p>Stay updated on any train schedule changes.</p>
+                </section>
+                <section class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions, <strong><a href="contact.html">please contact our support team</a></strong>.</p>
+                </section>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sri Lanka Railway. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
